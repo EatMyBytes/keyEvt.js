@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="C:\jQuery.js"></script>
+		<link rel="stylesheet" href="C:\bootstrap\css\bootstrap.min.css">
+		<script src="C:\bootstrap\js\bootstrap.min.js"></script>
+		<title>About</title>
+		<style>
+			.row{
+				border-bottom:1px solid black;
+			}
+			#code{
+				background-color:#EEEEEE;
+			}
+			#mb{
+				color:mediumblue;
+			}
+			#b{
+				color:brown;
+			}
+			#r{
+				color:red;
+			}
+			#if{
+				padding-left:20px;
+			}
+			#if2{
+				padding-left:40px;
+			}
+			#r2{
+				padding-left:20px;
+			}
+			#r3{
+				padding-left:40px;
+			}
+			#r4{
+				padding-left: 60px;
+			}
+			#r5{
+				padding-left: 80px;
+			}
+			#block{
+				width:200px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>What is keyEvt.js?</h1>
+				<p>KeyEvt.js is a javascript library made by me :D <a href="https://github.com/EatMyBytes">EatMyBytes</a> that allows for easy access to user key input.</p>
+				<a href="https://github.com/EatMyBytes/keyEvt.js"> Download link: https://github.com/EatMyBytes/keyEvt.js</a>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>How does it work?</h3>
+					<p>When a user presses a key on their keyboard
+						keyEvt takes that keycode, matches it up with the value of the key
+						on the keyboard and <strong>returns</strong> that value to the programmer.
+					</p>
+				</div>
+				
+				<div class="col-sm-4">
+					<h3>So whats my benifit?</h3>
+					<p>You can see if a user pressed any key with a simple js <strong>if</strong> statement.</p>
+				</div>
+				
+				<div class="col-sm-4">
+					<h3>Alright How do i use it?</h3>
+					<p>Just add this code to your website, a keypress or keydown event and a if statement</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Jquery users</h3>
+					<code id="block">
+					<span id="mb"><</span><span id="b">script</span><span id="mb">></span>
+					</br>
+					<span>$ ( document ).keypress( function (){</span></br>
+					
+					<span id="if">
+						<span> if(Key(event) == "anyletter"){ </span></br>
+						<span id="if2">do whatever</span></br>
+						<span id="if">}</span>
+					</span>
+					</br>
+					<span>}); </span>
+					</br>
+					<span id="mb"><</span><span id="mb">/</span><span id="b">script</span><span id="mb">></span>
+					</code>
+				</div>
+				<div class="col-sm-4">
+					<h3>Js users</h3>
+					<code id="block">
+					<span id="mb"><</span><span id="b">script</span><span id="mb">></span>
+					</br>
+					<span>document.addEventListener("onkeypress", function(){</span></br>
+					
+					<span id="if">
+						<span> if(Key(event) == "anyletter"){ </span></br>
+						<span id="if2">do whatever</span></br>
+						<span id="if">}</span>
+					</span>
+					</br>
+					<span>}); </span>
+					</br>
+					<span id="mb"><</span><span id="mb">/</span><span id="b">script</span><span id="mb">></span>
+					</code>
+				</div>
+				<div class="col-sm-4">
+					<h3>How ever you Like ;)</h3>
+					<code id="block">
+					<span id="mb"><</span><span id="b">html <span id="r"> onkeypress=</span><span>"move()"</span></span><span id="mb">></span></br>
+					
+					<span id="r2">
+						<span id="mb"><</span><span id="b">head</span><span id="mb">></span></br>
+						<span id="r2"><span id="mb"><</span><span id="mb">/</span><span id="b">head</span><span id="mb">></span></span>
+					</span>
+					</br>
+					<span id="r2">
+						<span id="mb"><</span><span id="b">body</span><span id="mb">></span></br>
+						
+						<span  id="r3">
+							<span id="mb"><</span><span id="b">script</span><span id="mb">></span></br>
+						</span>
+                               
+                               <span id="r3">function move(){</span></br>
+                                 <span id="r4">if(Key(event) == "w"){</span></br>
+                                   <span id="r5">move Up</span>
+                                 </br><span id="r4">}</span> 
+                               </br><span id="r3">}</span>
+
+						</br><span id="r3">
+							<span id="mb"><</span><span id="mb">/</span><span id="b">script</span><span id="mb">></span>
+						</span>
+						</br><span id="r2"><span id="mb"><</span><span id="mb">/</span><span id="b">body</span><span id="mb">></span></span>
+					</span>
+					</br><span id="mb"><</span><span id="mb">/</span><span id="b">html</span><span id="mb">></span>
+					</code>
+				</div>
+			</div>
+
+			<footer>
+                <span>Copyright &copy 2016 <a href="https://github.com/EatMyBytes">EatMyBytes</a></span><br>
+                <a href="http://www.youtube.com/CodeDen20">YouTube/CodeDen20</a>
+			</footer>
+		</div>
+	</body>
+</html>
