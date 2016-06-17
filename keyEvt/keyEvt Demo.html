@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="Demo project">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+		<style type="text/css">
+			#evtBanner{
+				width:100%;
+				font-family: Verdana;
+				font-size:35px;
+				background-color:#EEEEEE;
+				position: fixed;
+				box-shadow: 0px 20px 20px;
+			}
+			#evtBanner span{
+				padding-left:20px;
+			}
+			#keybox{
+				width:100%;
+				height:500px;
+				border-bottom: 10px solid #333;
+				position: absolute;
+				left:0;
+				right:0;
+				top:75px;
+				margin: auto;
+				text-align:center;
+				background-color:#2f2626;
+			}
+			#keycodes{
+				width:300px;
+				height:500px;
+				position: absolute;
+				left:0;
+				top:0;
+				overflow-y: scroll;
+		/*background-color: #333;*/
+		border-right: 5px solid #333;
+			}
+			#keycodes p{
+				float: left;
+			    color: white;
+			    padding-left: 10px;
+			}
+			#codeBox{
+				width:1200px;
+				height:200px;
+				position: absolute;
+				left:300px;
+				/*border:1px solid black;*/
+				text-align: center;
+			}
+			#code{
+				padding-top:155px;
+				font-size:75px;
+				color:white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			
+			<div id="evtBanner">
+				<span>keyEvt.js</span>
+			</div>
+
+			<div id="keybox">
+				<div id="codeBox">
+					<p id="code">Press a Key  (letter = keycode)</p>
+				</div>
+				<div id="keycodes"></div>
+			</div>
+		</body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="keyEvt.js"></script>
+		<script>
+		//$(document).ready(function() {
+			$(document).keypress(function() {
+	          	
+	          	document.getElementById("code").innerHTML = Key(event) + " = " + key;
+
+		         $ ( "#keycodes" ).append("<p>keyEvt.js >>> " + Key(event) + " = " + key +"</p>").append("<br></br>")
+
+		});
+		//});
+		</script>
+	</html>
