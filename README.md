@@ -41,7 +41,7 @@ Just add this code to your website, a keypress or keydown event and a if stateme
     <script>
       function move(){
         if(Key(event) == "w"){
-          move Up 
+          do whatever 
         } 
       } 
     </script> 
