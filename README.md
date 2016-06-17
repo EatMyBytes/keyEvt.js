@@ -12,7 +12,7 @@ You can see if a user pressed any key with a simple js if statement.
 Alright How do i use it?
 Just add this code to your website, a keypress or keydown event and a if statement
 
-Jquery users
+#Jquery
 ```html
 <script>
   $ ( document ).keypress( function (){
@@ -22,7 +22,7 @@ Jquery users
   }); 
 </script>
 ```
-#Js users
+#Js
 ```html
 <script> 
   document.addEventListener("onkeypress", function(){
