@@ -1,5 +1,6 @@
-//© 2016  DOMINIC MIGUEL STRONG ALL RIGHTS RESERVED
+//Copyright © 2016 EatMyBytes
 //345links@gmail.com
+//YouTube/CodeDen20
 var TKecho = true,
     key;
 
