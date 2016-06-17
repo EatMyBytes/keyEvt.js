@@ -15,32 +15,36 @@ Just add this code to your website, a keypress or keydown event and a if stateme
 Jquery users
 ```html
 <script>
-$ ( document ).keypress( function (){
-if(Key(event) == "anyletter"){ 
-do whatever
-} 
-}); 
+  $ ( document ).keypress( function (){
+    if(Key(event) == "anyletter"){ 
+      do whatever
+    } 
+  }); 
 </script>
 ```
 #Js users
+```html
 <script> 
-document.addEventListener("onkeypress", function(){
-if(Key(event) == "anyletter"){ 
-do whatever
-} 
-}); 
+  document.addEventListener("onkeypress", function(){
+    if(Key(event) == "anyletter"){ 
+        do whatever
+    } 
+  }); 
 </script>
-How ever you Like ;)
+```
+#How ever you Like ;)
+```html
 <html onkeypress="move()">
-<head>
-</head> 
-<body>
-<script>
-function move(){
-if(Key(event) == "w"){
-move Up 
-} 
-} 
-</script> 
-</body> 
+  <head>
+  </head> 
+  <body>
+    <script>
+      function move(){
+        if(Key(event) == "w"){
+          move Up 
+        } 
+      } 
+    </script> 
+  </body> 
 </html>
+```
